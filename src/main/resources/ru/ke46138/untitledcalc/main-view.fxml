@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="root" alignment="CENTER" stylesheets="/styles/main-style.css" xmlns="http://javafx.com/javafx/24" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.ke46138.untitledcalc.MainController">
+    <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="114.0" prefWidth="353.0">
+        <Label fx:id="mainDisplayEffect" alignment="CENTER_RIGHT" layoutX="-14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="114.0" prefWidth="350.0" styleClass="mainDisplayEffect" text="~~~~~~~~~~" AnchorPane.rightAnchor="0.0">
+            <padding>
+                <Insets right="10.0" />
+            </padding>
+            <font>
+                <Font size="52.0" />
+            </font>
+            <effect>
+                <GaussianBlur radius="4" />
+            </effect>
+        </Label>
+        <Label fx:id="mainDisplay" alignment="CENTER_RIGHT" layoutX="-14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="114.0" prefWidth="350.0" styleClass="mainDisplay" text="0" AnchorPane.rightAnchor="0.0">
+            <padding>
+                <Insets right="10.0" />
+            </padding>
+            <font>
+                <Font size="52.0" />
+            </font>
+        </Label>
+        <Label fx:id="actionDisplayEffect" styleClass="actionDisplayEffect" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="270.0" layoutY="85.0" prefHeight="20.0" prefWidth="73.0" text="~">
+            <effect>
+                <GaussianBlur radius="4" />
+            </effect>
+        </Label>
+        <Label fx:id="actionDisplay" styleClass="actionDisplay" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="270.0" layoutY="85.0" prefHeight="20.0" prefWidth="73.0" text=""/>
+    </AnchorPane>
+    <GridPane alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="387.0" prefWidth="357.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <Button fx:id="sevenBtn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonHandler" text="7" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets bottom="5" left="5" right="5" top="5" />
+            </GridPane.margin>
+            <maxWidth>Infinity</maxWidth>
+            <maxHeight>Infinity</maxHeight>
+        </Button>
+        <Button fx:id="eightBtn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonHandler" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets bottom="5" left="5" right="5" top="5" />
+            </GridPane.margin>
+            <maxWidth>Infinity</maxWidth>
+            <maxHeight>Infinity</maxHeight>
+        </Button>
+        <Button fx:id="nineBtn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonHandler" text="9" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets bottom="5" left="5" right="5" top="5" />
+            </GridPane.margin>
+            <maxWidth>Infinity</maxWidth>
+            <maxHeight>Infinity</maxHeight>
+        </Button>
+        <Button fx:id="divideBtn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonHandler" text="÷" GridPane.columnIndex="3" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets bottom="5" left="5" right="5" top="5" />
+            </GridPane.margin>
+            <maxWidth>Infinity</maxWidth>
+            <maxHeight>Infinity</maxHeight>
+        </Button>
+        <Button fx:id="fourBtn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonHandler" text="4" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets bottom="5" left="5" right="5" top="5" />
+            </GridPane.margin>
+            <maxWidth>Infinity</maxWidth>
+            <maxHeight>Infinity</maxHeight>
+        </Button>
+        <Button fx:id="fiveBtn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonHandler" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets bottom="5" left="5" right="5" top="5" />
+            </GridPane.margin>
+            <maxWidth>Infinity</maxWidth>
+            <maxHeight>Infinity</maxHeight>
+        </Button>
+        <Button fx:id="sixBtn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonHandler" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets bottom="5" left="5" right="5" top="5" />
+            </GridPane.margin>
+            <maxWidth>Infinity</maxWidth>
+            <maxHeight>Infinity</maxHeight>
+        </Button>
+        <Button fx:id="multiplyBtn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonHandler" text="*" GridPane.columnIndex="3" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets bottom="5" left="5" right="5" top="5" />
+            </GridPane.margin>
+            <maxWidth>Infinity</maxWidth>
+            <maxHeight>Infinity</maxHeight>
+        </Button>
+        <Button fx:id="oneBtn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonHandler" text="1" GridPane.rowIndex="3">
+            <GridPane.margin>
+                <Insets bottom="5" left="5" right="5" top="5" />
+            </GridPane.margin>
+            <maxWidth>Infinity</maxWidth>
+            <maxHeight>Infinity</maxHeight>
+        </Button>
+        <Button fx:id="twoBtn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonHandler" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <GridPane.margin>
+                <Insets bottom="5" left="5" right="5" top="5" />
+            </GridPane.margin>
+            <maxWidth>Infinity</maxWidth>
+            <maxHeight>Infinity</maxHeight>
+        </Button>
+        <Button fx:id="threeBtn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonHandler" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3">
+            <GridPane.margin>
+                <Insets bottom="5" left="5" right="5" top="5" />
+            </GridPane.margin>
+            <maxWidth>Infinity</maxWidth>
+            <maxHeight>Infinity</maxHeight>
+        </Button>
+        <Button fx:id="subtractBtn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonHandler" text="-" GridPane.columnIndex="3" GridPane.rowIndex="3">
+            <GridPane.margin>
+                <Insets bottom="5" left="5" right="5" top="5" />
+            </GridPane.margin>
+            <maxWidth>Infinity</maxWidth>
+            <maxHeight>Infinity</maxHeight>
+        </Button>
+        <Button fx:id="zeroBtn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonHandler" text="0" GridPane.rowIndex="4">
+            <GridPane.margin>
+                <Insets bottom="5" left="5" right="5" top="5" />
+            </GridPane.margin>
+            <maxWidth>Infinity</maxWidth>
+            <maxHeight>Infinity</maxHeight>
+        </Button>
+        <Button fx:id="dotBtn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonHandler" text="," GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <GridPane.margin>
+                <Insets bottom="5" left="5" right="5" top="5" />
+            </GridPane.margin>
+            <maxWidth>Infinity</maxWidth>
+            <maxHeight>Infinity</maxHeight>
+        </Button>
+        <Button fx:id="changeBtn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonHandler" text="+/-" GridPane.columnIndex="2" GridPane.rowIndex="4">
+            <GridPane.margin>
+                <Insets bottom="5" left="5" right="5" top="5" />
+            </GridPane.margin>
+            <maxWidth>Infinity</maxWidth>
+            <maxHeight>Infinity</maxHeight>
+        </Button>
+        <Button fx:id="plusBtn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonHandler" text="+" GridPane.columnIndex="3" GridPane.rowIndex="4">
+            <GridPane.margin>
+                <Insets bottom="5" left="5" right="5" top="5" />
+            </GridPane.margin>
+            <maxWidth>Infinity</maxWidth>
+            <maxHeight>Infinity</maxHeight>
+        </Button>
+        <Button fx:id="leftBracketBtn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonHandler" text="(">
+            <GridPane.margin>
+                <Insets bottom="5" left="5" right="5" top="5" />
+            </GridPane.margin>
+            <maxWidth>Infinity</maxWidth>
+            <maxHeight>Infinity</maxHeight>
+        </Button>
+        <Button fx:id="rightBracketBtn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonHandler" text=")" GridPane.columnIndex="1">
+            <GridPane.margin>
+                <Insets bottom="5" left="5" right="5" top="5" />
+            </GridPane.margin>
+            <maxWidth>Infinity</maxWidth>
+            <maxHeight>Infinity</maxHeight>
+        </Button>
+        <Button fx:id="sqrtBtn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonHandler" text="√" GridPane.columnIndex="2">
+            <GridPane.margin>
+                <Insets bottom="5" left="5" right="5" top="5" />
+            </GridPane.margin>
+            <maxWidth>Infinity</maxWidth>
+            <maxHeight>Infinity</maxHeight>
+        </Button>
+        <Button fx:id="percentBtn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonHandler" text="\%" GridPane.columnIndex="3">
+            <GridPane.margin>
+                <Insets bottom="5" left="5" right="5" top="5" />
+            </GridPane.margin>
+            <maxWidth>Infinity</maxWidth>
+            <maxHeight>Infinity</maxHeight>
+        </Button>
+        <Button fx:id="acBtn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonHandler" text="AC" GridPane.columnIndex="4">
+            <GridPane.margin>
+                <Insets bottom="5" left="5" right="5" top="5" />
+            </GridPane.margin>
+            <maxWidth>Infinity</maxWidth>
+            <maxHeight>Infinity</maxHeight>
+        </Button>
+        <Button fx:id="cBtn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonHandler" text="C" GridPane.columnIndex="4" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets bottom="5" left="5" right="5" top="5" />
+            </GridPane.margin>
+            <maxWidth>Infinity</maxWidth>
+            <maxHeight>Infinity</maxHeight>
+        </Button>
+        <Button fx:id="equalBtn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonHandler" text="=" GridPane.columnIndex="4" GridPane.rowIndex="3" GridPane.rowSpan="2">
+            <GridPane.margin>
+                <Insets bottom="5" left="5" right="5" top="5" />
+            </GridPane.margin>
+            <maxWidth>Infinity</maxWidth>
+            <maxHeight>Infinity</maxHeight>
+        </Button>
+        <Button fx:id="idkBtn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonHandler" text="&lt;-" GridPane.columnIndex="4" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets bottom="5" left="5" right="5" top="5" />
+            </GridPane.margin>
+            <maxWidth>Infinity</maxWidth>
+            <maxHeight>Infinity</maxHeight>
+        </Button>
+    </GridPane>
+</VBox>

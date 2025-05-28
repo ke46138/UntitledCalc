@@ -1,2 +1,2 @@
 # UntitledCalc
-Калькулятор на JavaFX
+Калькулятор на JavaFX в ретро стиле

@@ -1,0 +1,33 @@
+.root {
+    -fx-background-color: #101010;
+}
+
+.mainDisplay {
+    -fx-text-fill: #f80000;
+    -fx-font-family: 'DSEG14 Modern';
+    -fx-font-size: 40;
+}
+
+.mainDisplayEffect {
+    -fx-text-fill: #610000;
+    -fx-font-family: 'DSEG14 Modern';
+    -fx-font-size: 40;
+}
+
+.actionDisplay {
+    -fx-text-fill: #f80000;
+    -fx-font-family: 'DSEG14 Modern';
+    -fx-font-size: 20;
+}
+
+.actionDisplayEffect {
+    -fx-text-fill: #610000;
+    -fx-font-family: 'DSEG14 Modern';
+    -fx-font-size: 20;
+}
+
+.button {
+    -fx-background-color: #2d2d2d;
+    -fx-text-fill: white;
+    -fx-focus-traversable: false;
+}
