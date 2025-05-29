@@ -2,25 +2,25 @@
     -fx-background-color: #101010;
 }
 
-.mainDisplay {
+#mainDisplay {
     -fx-text-fill: #f80000;
     -fx-font-family: 'DSEG14 Modern';
     -fx-font-size: 40;
 }
 
-.mainDisplayEffect {
+#mainDisplayEffect {
     -fx-text-fill: #610000;
     -fx-font-family: 'DSEG14 Modern';
     -fx-font-size: 40;
 }
 
-.actionDisplay {
+#actionDisplay {
     -fx-text-fill: #f80000;
     -fx-font-family: 'DSEG14 Modern';
     -fx-font-size: 20;
 }
 
-.actionDisplayEffect {
+#actionDisplayEffect {
     -fx-text-fill: #610000;
     -fx-font-family: 'DSEG14 Modern';
     -fx-font-size: 20;
@@ -30,4 +30,5 @@
     -fx-background-color: #2d2d2d;
     -fx-text-fill: white;
     -fx-focus-traversable: false;
+    -fx-font-size: 16px;
 }
