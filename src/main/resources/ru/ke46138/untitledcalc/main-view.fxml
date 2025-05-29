@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox fx:id="root" alignment="CENTER" stylesheets="/styles/main-style.css" xmlns="http://javafx.com/javafx/24" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.ke46138.untitledcalc.MainController">
+<VBox alignment="CENTER" stylesheets="/styles/main-style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.ke46138.untitledcalc.MainController">
     <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="114.0" prefWidth="353.0">
         <Label fx:id="mainDisplayEffect" alignment="CENTER_RIGHT" layoutX="-14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="114.0" prefWidth="350.0" styleClass="mainDisplayEffect" text="~~~~~~~~~~" AnchorPane.rightAnchor="0.0">
             <padding>
@@ -32,12 +32,12 @@
                 <Font size="52.0" />
             </font>
         </Label>
-        <Label fx:id="actionDisplayEffect" styleClass="actionDisplayEffect" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="270.0" layoutY="85.0" prefHeight="20.0" prefWidth="73.0" text="~">
+        <Label fx:id="actionDisplayEffect" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="-14.0" layoutY="85.0" prefHeight="20.0" prefWidth="73.0" text="~" AnchorPane.rightAnchor="10.0">
             <effect>
-                <GaussianBlur radius="4" />
+                <GaussianBlur radius="3" />
             </effect>
         </Label>
-        <Label fx:id="actionDisplay" styleClass="actionDisplay" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="270.0" layoutY="85.0" prefHeight="20.0" prefWidth="73.0" text=""/>
+        <Label fx:id="actionDisplay" styleClass="actionDisplay" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="-14.0" layoutY="85.0" prefHeight="20.0" prefWidth="73.0" AnchorPane.rightAnchor="10.0"/>
     </AnchorPane>
     <GridPane alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="387.0" prefWidth="357.0">
         <columnConstraints>
@@ -152,7 +152,7 @@
             <maxWidth>Infinity</maxWidth>
             <maxHeight>Infinity</maxHeight>
         </Button>
-        <Button fx:id="changeBtn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonHandler" text="+/-" GridPane.columnIndex="2" GridPane.rowIndex="4">
+        <Button fx:id="revertBtn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonHandler" text="+/-" GridPane.columnIndex="2" GridPane.rowIndex="4">
             <GridPane.margin>
                 <Insets bottom="5" left="5" right="5" top="5" />
             </GridPane.margin>
@@ -166,14 +166,14 @@
             <maxWidth>Infinity</maxWidth>
             <maxHeight>Infinity</maxHeight>
         </Button>
-        <Button fx:id="leftBracketBtn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonHandler" text="(">
+        <Button fx:id="xinyBtn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonHandler" text="x^y">
             <GridPane.margin>
                 <Insets bottom="5" left="5" right="5" top="5" />
             </GridPane.margin>
             <maxWidth>Infinity</maxWidth>
             <maxHeight>Infinity</maxHeight>
         </Button>
-        <Button fx:id="rightBracketBtn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonHandler" text=")" GridPane.columnIndex="1">
+        <Button fx:id="xinsquareBtn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonHandler" text="x^2" GridPane.columnIndex="1">
             <GridPane.margin>
                 <Insets bottom="5" left="5" right="5" top="5" />
             </GridPane.margin>
@@ -215,7 +215,7 @@
             <maxWidth>Infinity</maxWidth>
             <maxHeight>Infinity</maxHeight>
         </Button>
-        <Button fx:id="idkBtn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonHandler" text="&lt;-" GridPane.columnIndex="4" GridPane.rowIndex="2">
+        <Button fx:id="backspaceBtn" alignment="CENTER" mnemonicParsing="false" onAction="#buttonHandler" text="&lt;-" GridPane.columnIndex="4" GridPane.rowIndex="2">
             <GridPane.margin>
                 <Insets bottom="5" left="5" right="5" top="5" />
             </GridPane.margin>
