@@ -14,15 +14,12 @@ public class Main extends Application {
         Font.loadFont(getClass().getResourceAsStream("/fonts/DSEG14Modern-Italic.ttf"), 64);
 
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("/views/main-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 350, 500);
+        Scene scene = new Scene(fxmlLoader.load(), 360, 500);
         stage.setTitle("UntitledCalc");
         stage.setScene(scene);
 
         // Запрет изменения размеров окна
         stage.setResizable(false);
-
-        // Запрет разворачивания (максимизации)
-        stage.setMaximized(false);
 
         stage.show();
     }
